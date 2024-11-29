@@ -3,7 +3,6 @@
 		<article class="w-full px-[20%] pt-10 relative">
 			<ContentDoc>
 				<template v-slot="{ doc }">
-					<!-- <div>{{ doc }}</div> -->
 					<ContentRenderer :value="doc" />
 					<aside class="fixed w-[15%] right-0 top-[10%] z-20">
 						<ContentSideMenu :menu="doc.body.toc.links" />
